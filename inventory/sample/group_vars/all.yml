@@ -1,0 +1,16 @@
+# Use proxy
+use_freeme: true
+
+## V2ray serttings
+v2ray_addr:
+v2ray_port:
+v2ray_uuid:
+
+## Signbox settings
+sb_addr:
+sb_port: 443
+sb_uuid:
+sb_publickey:
+sb_sni:
+sb_shortid:
+proxy_port: 10809

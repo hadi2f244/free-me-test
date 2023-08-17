@@ -1,0 +1,12 @@
+
+- hosts: all
+  gather_facts: True
+  tasks:
+    - name: container_proxy connect
+      include_role:
+        name: "hadi2f244.free_me.container_proxy"
+      vars:
+        connected: false
+        http_proxy: "http://127.0.0.1:2080"
+        https_proxy: "http://127.0.0.1:2080"
+      when: use_freeme == true

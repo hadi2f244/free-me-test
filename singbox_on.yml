@@ -1,0 +1,13 @@
+
+- hosts: all
+  gather_facts: True
+  tasks:
+    - name: singbox connect
+      include_role:
+        name: "hadi2f244.free_me.singbox"
+      vars:
+        connected: true
+        set_env_proxy: true
+        set_apt_proxy: true
+        set_container_proxy: true
+      when: use_freeme == true
