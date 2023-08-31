@@ -1,0 +1,13 @@
+
+
+- hosts: all
+  gather_facts: True
+  tasks:
+    - name: container_proxy disconnect
+      include_role:
+        name: "hadi2f244.free_me.container_proxy"
+      vars:
+        connected: false
+        http_proxy: "{{ freeme.container_proxy.http_proxy }}"
+        https_proxy: "{{ freeme.container_proxy.https_proxy }}"
+      when: freeme.use_freeme == true

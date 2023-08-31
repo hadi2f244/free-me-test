@@ -1,0 +1,20 @@
+
+- hosts: all
+  gather_facts: True
+  tasks:
+    - name: singbox disconnect
+      include_role:
+        name: "hadi2f244.free_me.singbox"
+      vars:
+        connected: false
+        set_env_proxy: true
+        set_apt_proxy: true
+        set_container_proxy: true
+        sb_addr: "{{ freeme.singbox.sb_addr }}"
+        sb_port: "{{ freeme.singbox.sb_port }}"
+        sb_uuid: "{{ freeme.singbox.sb_uuid }}"
+        sb_publickey: "{{ freeme.singbox.sb_publickey }}"
+        sb_sni: "{{ freeme.singbox.sb_sni }}"
+        sb_shortid: "{{ freeme.singbox.sb_shortid }}"
+        proxy_port: "{{ freeme.singbox.proxy_port }}"
+      when: freeme.use_freeme == true

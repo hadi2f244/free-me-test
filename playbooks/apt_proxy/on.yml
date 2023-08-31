@@ -1,0 +1,13 @@
+
+
+- hosts: all
+  gather_facts: True
+  tasks:
+    - name: apt_proxy connect
+      include_role:
+        name: "hadi2f244.free_me.apt_proxy"
+      vars:
+        connected: true
+        http_proxy: "{{ freeme.apt_proxy.http_proxy }}"
+        https_proxy: "{{ freeme.apt_proxy.https_proxy }}"
+      when: freeme.use_freeme == true
