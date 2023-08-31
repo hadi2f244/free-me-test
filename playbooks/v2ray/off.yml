@@ -7,6 +7,7 @@
         name: "hadi2f244.free_me.v2ray"
       vars:
         connected: false
+        # v2ray_version: "{{ freeme_v2ray.v2ray_version }}"
         set_env_proxy: "{{ freeme_v2ray.set_env_proxy }}"
         set_apt_proxy: "{{ freeme_v2ray.set_apt_proxy }}"
         set_container_proxy: "{{ freeme_v2ray.set_container_proxy }}"
@@ -15,4 +16,8 @@
         v2ray_uuid: "{{ freeme_v2ray.v2ray_uuid }}"
         proxy_socks_port: "{{ freeme_v2ray.proxy_socks_port }}"
         proxy_http_port: "{{ freeme_v2ray.proxy_http_port }}"
+        v2ray_trojan_password: "{{ freeme_v2ray.v2ray_trojan_password }}"
+        backup_previous_config: "{{ freeme_v2ray.backup_previous_config }}"
+        use_custom_config: "{{ freeme_v2ray.use_custom_config }}"
+        custom_config: "{{ freeme_v2ray.custom_config }}"
       when: use_freeme == true

@@ -1,5 +1,6 @@
 ---
 freeme_v2ray:
+  # v2ray_version: "5.7.0"
   set_env_proxy: true
   set_apt_proxy: true
   set_container_proxy: true
@@ -10,3 +11,19 @@ freeme_v2ray:
   v2ray_trojan_password:
   proxy_socks_port: 10808
   proxy_http_port: 10809
+
+  backup_previous_config: false
+
+  use_custom_config: false # Note: Change proxy_socks_port/proxy_http_port accordingly if you use custom config
+  custom_config: |
+    {
+      "inbounds": [
+        ...
+      ],
+      "outbounds": [
+        ...
+      ],
+      "routing": {
+        ...
+      }
+    }

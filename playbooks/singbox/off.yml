@@ -7,6 +7,7 @@
         name: "hadi2f244.free_me.singbox"
       vars:
         connected: false
+        # singbox_version: "{{ freeme_singbox.singbox_version }}"
         set_env_proxy: "{{ freeme_singbox.set_env_proxy }}"
         set_apt_proxy: "{{ freeme_singbox.set_apt_proxy }}"
         set_container_proxy: "{{ freeme_singbox.set_container_proxy }}"
@@ -17,4 +18,7 @@
         sb_sni: "{{ freeme_singbox.sb_sni }}"
         sb_shortid: "{{ freeme_singbox.sb_shortid }}"
         proxy_port: "{{ freeme_singbox.proxy_port }}"
+        backup_previous_config: "{{ freeme_singbox.backup_previous_config }}"
+        use_custom_config: "{{ freeme_singbox.use_custom_config }}"
+        custom_config: "{{ freeme_singbox.custom_config }}"
       when: use_freeme == true

@@ -1,5 +1,6 @@
 ---
 freeme_singbox:
+  # singbox_version: "1.3.6"
   set_env_proxy: true
   set_apt_proxy: true
   set_container_proxy: true
@@ -8,7 +9,24 @@ freeme_singbox:
   sb_port: 443
   sb_uuid:
   sb_publickey:
-  sb_sni: 
+  sb_sni:
   sb_shortid:
   proxy_port: 10809
 
+  backup_previous_config: false
+
+  use_custom_config: true # Note: Change proxy_port accordingly if you use custom config
+  custom_config: |
+    {
+      "inbounds":[
+          {
+           ...
+          }
+      ],
+      "outbounds":[
+          ...
+      ],
+      "route":{
+          ...
+      }
+    }
