@@ -131,4 +131,5 @@ changelogs/.plugin-cache.yaml
 # Credentials
 inventory/*
 !inventory/sample
+!inventory/sample/*
 .vault%

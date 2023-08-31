@@ -1,0 +1,4 @@
+---
+freeme_env_proxy:
+  http_proxy: "http://127.0.0.1:2080"
+  https_proxy: "http://127.0.0.1:2080"

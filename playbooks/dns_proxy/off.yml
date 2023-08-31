@@ -8,6 +8,6 @@
         name: "hadi2f244.free_me.dns_proxy"
       vars:
         connected: false
-        dnsproxy_dns_1: "{{ freeme.dns_proxy.dnsproxy_dns_1 }}"
-        dnsproxy_dns_2: "{{ freeme.dns_proxy.dnsproxy_dns_2 }}"
-      when: freeme.use_freeme == true
+        dnsproxy_dns_1: "{{ freeme_dns_proxy.dnsproxy_dns_1 }}"
+        dnsproxy_dns_2: "{{ freeme_dns_proxy.dnsproxy_dns_2 }}"
+      when: use_freeme == true

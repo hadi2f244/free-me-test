@@ -1,0 +1,14 @@
+---
+freeme_singbox:
+  set_env_proxy: true
+  set_apt_proxy: true
+  set_container_proxy: true
+
+  sb_addr:
+  sb_port: 443
+  sb_uuid:
+  sb_publickey:
+  sb_sni: 
+  sb_shortid:
+  proxy_port: 10809
+

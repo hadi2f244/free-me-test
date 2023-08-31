@@ -8,6 +8,6 @@
         name: "hadi2f244.free_me.env_proxy"
       vars:
         connected: false
-        http_proxy: "{{ freeme.env_proxy.http_proxy }}"
-        https_proxy: "{{ freeme.env_proxy.https_proxy }}"
-      when: freeme.use_freeme == true
+        http_proxy: "{{ freeme_env_proxy.http_proxy }}"
+        https_proxy: "{{ freeme_env_proxy.https_proxy }}"
+      when: use_freeme == true

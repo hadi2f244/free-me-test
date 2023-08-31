@@ -8,6 +8,6 @@
         name: "hadi2f244.free_me.apt_proxy"
       vars:
         connected: false
-        http_proxy: "{{ freeme.apt_proxy.http_proxy }}"
-        https_proxy: "{{ freeme.apt_proxy.https_proxy }}"
-      when: freeme.use_freeme == true
+        http_proxy: "{{ freeme_apt_proxy.http_proxy }}"
+        https_proxy: "{{ freeme_apt_proxy.https_proxy }}"
+      when: use_freeme == true

@@ -8,6 +8,6 @@
         name: "hadi2f244.free_me.container_proxy"
       vars:
         connected: true
-        http_proxy: "{{ freeme.container_proxy.http_proxy }}"
-        https_proxy: "{{ freeme.container_proxy.https_proxy }}"
-      when: freeme.use_freeme == true
+        http_proxy: "{{ freeme_container_proxy.http_proxy }}"
+        https_proxy: "{{ freeme_container_proxy.https_proxy }}"
+      when: use_freeme == true

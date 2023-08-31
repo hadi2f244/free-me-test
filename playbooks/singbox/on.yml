@@ -7,14 +7,14 @@
         name: "hadi2f244.free_me.singbox"
       vars:
         connected: true
-        set_env_proxy: true
-        set_apt_proxy: true
-        set_container_proxy: true
-        sb_addr: "{{ freeme.singbox.sb_addr }}"
-        sb_port: "{{ freeme.singbox.sb_port }}"
-        sb_uuid: "{{ freeme.singbox.sb_uuid }}"
-        sb_publickey: "{{ freeme.singbox.sb_publickey }}"
-        sb_sni: "{{ freeme.singbox.sb_sni }}"
-        sb_shortid: "{{ freeme.singbox.sb_shortid }}"
-        proxy_port: "{{ freeme.singbox.proxy_port }}"
-      when: freeme.use_freeme == true
+        set_env_proxy: "{{ freeme_singbox.set_env_proxy }}"
+        set_apt_proxy: "{{ freeme_singbox.set_apt_proxy }}"
+        set_container_proxy: "{{ freeme_singbox.set_container_proxy }}"
+        sb_addr: "{{ freeme_singbox.sb_addr }}"
+        sb_port: "{{ freeme_singbox.sb_port }}"
+        sb_uuid: "{{ freeme_singbox.sb_uuid }}"
+        sb_publickey: "{{ freeme_singbox.sb_publickey }}"
+        sb_sni: "{{ freeme_singbox.sb_sni }}"
+        sb_shortid: "{{ freeme_singbox.sb_shortid }}"
+        proxy_port: "{{ freeme_singbox.proxy_port }}"
+      when: use_freeme == true

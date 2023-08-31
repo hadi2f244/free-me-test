@@ -1,0 +1,12 @@
+---
+freeme_v2ray:
+  set_env_proxy: true
+  set_apt_proxy: true
+  set_container_proxy: true
+
+  v2ray_addr:
+  v2ray_port:
+  v2ray_uuid:
+  v2ray_trojan_password:
+  proxy_socks_port: 10808
+  proxy_http_port: 10809
