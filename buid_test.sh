@@ -9,4 +9,5 @@ cp $targzFile $curPath
 cd $curPath
 deactivate
 source .venv/bin/activate
-ansible-galaxy collection install $targzFile -p ./collections
+echo "Force installing hadi2f244.freeme collection ..."
+ansible-galaxy collection install -f $targzFile -p ./collections
