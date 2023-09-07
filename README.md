@@ -43,7 +43,7 @@ freeme_v2ray:
       }
     }
 ```
-+ You can also use custom configs. Add Custom config to `custom_config`, set `use_custom_config: true`, and make sure you add the correct `proxy_socks_port/proxy_http_port`.
++ You can also use custom configs. Add Custom config to `custom_config`, set `use_custom_config: true`, and make sure you add the correct `proxy_socks_port/proxy_http_port`. 
 
 ```
   # v2ray_version: "5.7.0"
@@ -79,7 +79,10 @@ freeme_v2ray:
 ```
 ansible-playbook -i inventory/mine/inventory.ini playbooks/v2ray/on.yml -b -k -K -l "<myhost>"
 ```
-5. To stop
+
++ Check your public IP: `curl api.ipify.org`
+
+6. To stop:
 ```
 ansible-playbook  -i inventory/mine/inventory.ini playbooks/v2ray/off.yml -b -k -K -l "<myhost>"
 ```
