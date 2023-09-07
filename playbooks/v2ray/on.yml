@@ -20,4 +20,3 @@
         backup_previous_config: "{{ freeme_v2ray.backup_previous_config }}"
         use_custom_config: "{{ freeme_v2ray.use_custom_config }}"
         custom_config: "{{ freeme_v2ray.custom_config }}"
-      when: use_freeme == true

@@ -10,4 +10,3 @@
         connected: false
         dnsproxy_dns_1: "{{ freeme_dns_proxy.dnsproxy_dns_1 }}"
         dnsproxy_dns_2: "{{ freeme_dns_proxy.dnsproxy_dns_2 }}"
-      when: use_freeme == true

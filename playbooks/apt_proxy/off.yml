@@ -10,4 +10,3 @@
         connected: false
         http_proxy: "{{ freeme_apt_proxy.http_proxy }}"
         https_proxy: "{{ freeme_apt_proxy.https_proxy }}"
-      when: use_freeme == true
